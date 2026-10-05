@@ -135,6 +135,6 @@ alu-web-development/
 
 ## Author
 
-**Calm**: Software Engineering student at ALU, Kigali, Rwanda
+**Hassan Ahmed**: Software Engineering student at ALU, Kigali, Rwanda
 
 GitHub: [hahmed2-crypto](https://github.com/hahmed2-crypto)
