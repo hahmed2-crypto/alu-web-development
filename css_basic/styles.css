@@ -1,0 +1,102 @@
+/* ---------- Layout (Flexbox) ---------- */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  min-height: 0; /* lets article/aside scroll inside main */
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* ---------- Custom styling (colors, borders, etc.) ---------- */
+body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+header {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+header a {
+  color: #ffffff;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: background-color 0.2s;
+}
+
+header a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+article {
+  padding: 30px;
+}
+
+article h1 {
+  color: #38bdf8;
+  border-bottom: 3px solid #4f46e5;
+  padding-bottom: 8px;
+}
+
+article h2 {
+  color: #a5b4fc;
+}
+
+article h3 {
+  color: #67e8f9;
+}
+
+article a {
+  color: #38bdf8;
+}
+
+article img {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #4f46e5;
+}
+
+blockquote.twitter-tweet {
+  background: #1e293b;
+  border-left: 5px solid #06b6d4;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 15px 20px;
+}
+
+aside {
+  background-color: #1e293b;
+  border-left: 2px solid #4f46e5;
+  padding: 30px 20px;
+  font-style: italic;
+  color: #94a3b8;
+}
+
+footer {
+  background-color: #020617;
+  text-align: center;
+  padding: 12px;
+  border-top: 2px solid #4f46e5;
+}
+
+footer a {
+  color: #38bdf8;
+}

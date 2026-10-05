@@ -1,0 +1,50 @@
+/* base.css - generic defaults + responsive rules */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  font-size: 40px;
+  line-height: 1;
+}
+
+/* Responsive: stack article and aside on small screens */
+@media (max-width: 800px) {
+  body.works_on_smartphone {
+    height: auto;
+  }
+  .works_on_smartphone main {
+    flex-direction: column;
+  }
+  .works_on_smartphone article,
+  .works_on_smartphone aside {
+    flex: none;
+    overflow-y: visible;
+  }
+}
